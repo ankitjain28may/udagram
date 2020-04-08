@@ -355,6 +355,11 @@ Resources:
       IamInstanceProfile: !Ref ProfileWithRolesForApp
       SecurityGroups:
         - !Ref PrivateHostSecurityGroup
+      BlockDeviceMappings: 
+        - DeviceName: /dev/sda1
+          Ebs: 
+            VolumeSize: 10
+            VolumeType: gp2
       UserData:
         Fn::Base64:
           Fn::Sub: |
