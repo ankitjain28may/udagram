@@ -1,7 +1,7 @@
 
 Description:  This template deploys a VPC, with a pair of public and private subnets. It deploys an internet gateway, with a default
   route on the public subnets. It deploys a NAT gateway and default routes for them in the private subnet.
-  
+
 Parameters:
   EnvironmentName:
     Description: An environment name that is prefixed to resource names
@@ -279,7 +279,7 @@ Outputs:
       Name: !Sub ${EnvironmentName}-Pub-Subnet-1
   
   PublicSubnet2:
-    Description: A reference to the public subnet in the 1st Availability Zone
+    Description: A reference to the public subnet in the 2nd Availability Zone
     Value: !Ref PublicSubnet2
     Export:
       Name: !Sub ${EnvironmentName}-Pub-Subnet-2
@@ -291,7 +291,7 @@ Outputs:
       Name: !Sub ${EnvironmentName}-Pri-Subnet-1
   
   PrivateSubnet2:
-    Description: A reference to the private subnet in the 1st Availability Zone
+    Description: A reference to the private subnet in the 2nd Availability Zone
     Value: !Ref PrivateSubnet2
     Export:
       Name: !Sub ${EnvironmentName}-Pri-Subnet-2
