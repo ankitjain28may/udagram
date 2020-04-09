@@ -12,28 +12,12 @@
     "ParameterValue": "Ankit Jain"
   },
   {
-    "ParameterKey": "VpcCIDR",
-    "ParameterValue": "10.20.0.0/16"
-  },
-  {
-    "ParameterKey": "PublicSubnetCIDR",
-    "ParameterValue": "10.20.10.0/24"
-  },
-  {
-    "ParameterKey": "PublicSubnet2CIDR",
-    "ParameterValue": "10.20.11.0/24"
-  },
-  {
-    "ParameterKey": "PrivateSubnetCIDR",
-    "ParameterValue": "10.20.20.0/24"
-  },
-  {
     "ParameterKey": "ImageID",
     "ParameterValue": "ami-0620d12a9cf777c87"
   },
   {
     "ParameterKey": "InstanceType",
-    "ParameterValue": "t2.micro"
+    "ParameterValue": "t3.medium"
   },
   {
     "ParameterKey": "KeyPairName",
