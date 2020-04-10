@@ -2,6 +2,8 @@
 
 This template deploys a VPC, with a pair of public and private subnets. It deploys an internet gateway, with a default route on the public subnets. It deploys a NAT gateway and default routes for them in the private subnet. It is also creating Bastion instance with which we can ssh into private subnet instances using aws ssm.
 
+![Network Diagram](./Application&#32;Infrastructure&#32;Diagram.png)
+
 ![Sample Application](./udagram.png)
 
 Website Link - [Udagram](http://udagram-1268848586.ap-south-1.elb.amazonaws.com/)
